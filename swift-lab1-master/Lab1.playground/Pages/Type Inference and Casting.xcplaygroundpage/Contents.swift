@@ -52,11 +52,13 @@ var humans = 10
 
  `var humans: Int`
  
- Swift automatically knows the type of our variable because we assigned `10` to it, and `10` is clearly an integer value. Let's try assigning a decimal number to `humans`. Remove the comment in the line below to see the error:
+ Swift automatically knows the type of our variable because we assigned `10` to it, and `10` is clearly an integer value. Let's try 
+ assigning a decimal number to `humans`. Remove the comment in the line below to see the error:
  */
 // humans = 6.4342
 /*:
- Silly programmer! You can't have four tenths of a person! Because Swift automatically inferred that `humans` is an `Int` when we first defined it, Swift won't let us assign a `Double` to it. No partial humans here.
+ Silly programmer! You can't have four tenths of a person! Because Swift automatically inferred that `humans` is an `Int` when we first 
+ defined it, Swift won't let us assign a `Double` to it. No partial humans here.
  
  __Make sure you comment the line above again before continuing.__
  
@@ -70,11 +72,15 @@ var count = 5
 /*:
  ## Type Casting
  
- Sometimes, you'll have an `Int` that you want to convert to a `Double`. Or maybe you'll have a `Double` that you want to convert to an `Int`, to get rid of its fractional component. This process is called _type casting_. Here's how you can do it:
+ Sometimes, you'll have an `Int` that you want to convert to a `Double`. Or maybe you'll have a `Double` that you want to convert to an 
+ `Int`, to get rid of its fractional component. This process is called _type casting_. Here's how you can do it:
  */
 let three = Int(pi)
 /*:
- Note that __Swift will NOT automatically cast types for you!__ This is a nice feature, because it prevents you from accidentally casting a type when you didn't mean to.  A consequence of this is that Swift expects numerical operations to only be done on numbers with the same type. For example, you can multiply two `Int`s or you can multiply two `Float`s, but you cannot multiply an `Int` and a `Float`.
+ Note that __Swift will NOT automatically cast types for you!__ This is a nice feature, because it prevents you from accidentally 
+ casting a type when you didn't mean to.  A consequence of this is that Swift expects numerical operations to only be done on 
+ numbers with the same type. For example, you can multiply two `Int`s or you can multiply two `Float`s, but you cannot multiply an `Int`
+  and a `Float`.
  */
 let angleInDegrees: Int = 60
     
@@ -96,36 +102,29 @@ let radians: Double = Double(angleInDegrees)  * pi / 180.0;
  
  - callout(Challenge): Imagine you are making a form in an app. There will be fields and other user interface elements that accept various types of data. Your app will accept the following information:
  
-        1. Your app needs to accept a username and hold it in a variable. What type is best for this variable?
-        2. Your app needs to accept a password. What type should this be?
-        3. Your app needs to accept a variable that holds a user's shoe size. What type is it?
-        4. Your app has a UIPicker that allows a visitor to choose their gender. The choices are M, F, O(ther), N(ot specified). What type should these be? You need to define a variable that will hold a value of M, F, O, or N.
-        5. Your app asks whether an applicant is older than 18. This is a check box or a switch, what type is best here? This should be a variable that has a value of true or false.
-        6. Your app asks how many people are in your party. (Imagine a reservation form) What type is this?
+        1. Your app needs to accept a username and hold it in a variable. What type is best for this variable? String
+        2. Your app needs to accept a password. What type should this be? Int
+        3. Your app needs to accept a variable that holds a user's shoe size. What type is it? Int
+        4. Your app has a UIPicker that allows a visitor to choose their gender. The choices are M, F, O(ther), N(ot specified). 
+        What type should these be? You need to define a variable that will hold a value of M, F, O, or N. String
+        5. Your app asks whether an applicant is older than 18. This is a check box or a switch, what type is best here? This 
+        should be a variable that has a value of true or false. - Character
+        6. Your app asks how many people are in your party. (Imagine a reservation form) What type is this? Double
  
  */
 
 
 
 // Write a definition for each variable followed by it's type (don't forget the colon!) below.
-
-
 var c: Character = "💩"
 var t: (Int, String, Double, Character) = (11, "Hello", 3.14, "👁️")
 
+var userName: String = "jedi"
+let password: Int  = 35675630394
+let shoeSize: Int = 8
 
-
-
+let userGender: String = "F"
+let olderThanEighteen: Character = "✅"
+var partySize: Int = 15
 
 //: [Previous](@previous)    [Next](@next)
-
-
-
-
-
-
-
-
-
-
-
