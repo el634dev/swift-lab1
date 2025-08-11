@@ -70,7 +70,8 @@ let Upcomingappversion = 1.1
  
  Use the concepts covered in this section to test your knowledge and expand your skills.
  
- - callout(Challenge): Consider each of the following situations and ask yourself whether it is best to use a `var` (_mutable_ variable) or `let` (_constant_ variable)...
+ - callout(Challenge): Consider each of the following situations and ask yourself whether it is best to use 
+ a `var` (_mutable_ variable) or `let` (_constant_ variable)...
  
      1. Storing information about the number of cars parked in a parking lot daily.
      
@@ -86,23 +87,22 @@ let Upcomingappversion = 1.1
 // Write your variables to describe the questions above here.
 
 
-
 // 1) Define a variable to hold the number of cars parked in a parking lot, there 4 cars parked at the moment.
-
+var numOfCars = 4
 
 
 
 // 2) Define variable that holds the number of units in a building on Market St. There 12 units in the building.
-
+let numOfUnits = 12
 
 
 
 // 3) Define a variable that will hold the high score in a game. The current value is 5000.
-
+var userHighScore = 5000
 
 
 // 4) Define a variable that holds the number of letters in the alphabet.
-
+let numOfLetters = 26
 
 
 //: [Next](@next)
